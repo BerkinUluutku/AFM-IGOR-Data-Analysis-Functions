@@ -11,7 +11,7 @@ fclose('all'); %IBWread does not close the file sometimes.
 %organise wave notes
 wnotes = wnoteMaker(raw_import.WaveNotes);
 
-[~, ~, i] = size(y);
+[~, ~, i] = size(raw_import.y);
 
 if i == 12
 data.height_trace = raw_import.y(:,:,1);
