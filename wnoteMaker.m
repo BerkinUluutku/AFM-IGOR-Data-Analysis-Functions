@@ -33,5 +33,9 @@ for i = 1 : length(t_wnotes)
     end
 end
 
+%order the fields alphabetically
+wnotes = orderfields(wnotes);
+
+
 end
 
