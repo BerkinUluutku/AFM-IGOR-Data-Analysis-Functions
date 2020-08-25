@@ -27,7 +27,7 @@ data.phase_2_retrace = raw_import.y(:,:,10);
 data.z_trace = raw_import.y(:,:,11);
 data.z_retrace = raw_import.y(:,:,12);
 
-if i == 6
+elseif i == 6
 data.height_retrace = raw_import.y(:,:,1);
 data.amp_1_retrace = raw_import.y(:,:,2);
 data.amp_2_retrace = raw_import.y(:,:,3);
