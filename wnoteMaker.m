@@ -1,6 +1,6 @@
 function [wnotes] = wnoteMaker(wnotes_ugly)
 %This functions puts wave notes in order as a structure. Easy to use and
-%access. 
+%access. -Berkin
 
 
 %Creating a cell arrayof wave notes. Useful while searching for AFM scan
