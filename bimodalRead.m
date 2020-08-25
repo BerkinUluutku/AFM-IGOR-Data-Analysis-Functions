@@ -1,10 +1,12 @@
 function [data, wnotes] = bimodalRead(path,file_name)
 %This is a function to read bimodal afm images or anything that is done
-%with Asylums dualAC mode. 
+%with Asylums dualAC mode. -Berkin
 
 
 %import file
 raw_import = IBWread([path file_name]);
+fclose('all'); %IBWread does not close the file sometimes. 
+
 
 %organise wave notes
 wnotes = wnoteMaker(raw_import.WaveNotes);
