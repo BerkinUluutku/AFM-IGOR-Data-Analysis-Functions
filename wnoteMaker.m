@@ -15,9 +15,12 @@ end
 %Making wave notes a structure. Its more convenient than cell array.
 for i = 1 : length(t_wnotes)
     if(~isempty(t_wnotes{i,2}))
-        wnotes.(t_wnotes{i,1}) = t_wnotes{i,2};
+        tmp_name = strrep(t_wnotes{i,1},' ','_');
+        tmp_name = strrep(tmp_name,'.','_');
+        wnotes.(tmp_name) = t_wnotes{i,2};
     end
 end
+
 
 end
 
